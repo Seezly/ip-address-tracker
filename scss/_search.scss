@@ -10,6 +10,11 @@
             border-radius: 0.5em;
             border: none;
             width: 100%;
+            box-shadow: 0.0625em 0.125em 0.125em rgba($darkGray, $alpha: 0.5);
+
+            &:hover {
+                cursor: pointer;
+            }
         }
 
         #submit {
@@ -23,8 +28,21 @@
             bottom: 0;
             right: 0;
             background: url('../images/icon-arrow.svg') center center $darkGray no-repeat;
-            box-shadow: -0.0625em 0 0.125em black;
+            box-shadow: -0.0625em 0 0.125em $darkGray;
             cursor: pointer;
+            transition: all .25s;
+            -moz-transition: all .25s;
+            -o-transition: all .25s;
+            -webkit-transition: all .25s;
+
+            &:hover {
+                background-color: rgba($darkGray, $alpha: 0.9);
+
+                transition: all .25s;
+                -moz-transition: all .25s;
+                -o-transition: all .25s;
+                -webkit-transition: all .25s;
+            }
         }
     }
 
