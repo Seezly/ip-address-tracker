@@ -1,0 +1,41 @@
+&__search {
+    margin-bottom: 2em;
+
+    &__form {
+        width: 100%;
+        position: relative;
+
+        #ip {
+            padding: 0.5em;
+            border-radius: 0.5em;
+            border: none;
+            width: 100%;
+        }
+
+        #submit {
+            width: 15%;
+            height: 100%;
+            position: absolute;
+            border-radius: 0 0.5em 0.5em 0;
+            border: none;
+            padding: 0.5em;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            background: url('../images/icon-arrow.svg') center center $darkGray no-repeat;
+            box-shadow: -0.0625em 0 0.125em black;
+            cursor: pointer;
+        }
+    }
+
+    @media only screen and (min-width: 1200px) {
+        &__form {
+            margin: auto;
+            width: 50%;
+        }
+
+        #ip {
+            padding: 1em;
+        }
+    }
+}

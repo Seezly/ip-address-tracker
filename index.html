@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+		<link rel="stylesheet" href="./css/styles.css">
+		<link rel="stylesheet" href="./css/normalize.css">
+		<title>Frontend Mentor | IP Address Tracker</title>
+
+	</head>
+	
+	<body>
+
+		<main class="container">
+
+			<h1 class="container__title">IP Address Tracker</h1>
+		
+			<article class="container__search">
+
+				<form class="container__search__form" id="form">
+					<input type="text" name="ip" id="ip" placeholder="Search for any IP address or domain" required>
+					<button id="submit"></button>
+				</form>
+
+
+			</article>
+		
+			<article class="container__info">
+
+				<div class="container__info__client">
+
+					<small class="info-title">ip address</small>
+					<h3 class="client-info" id="ip-address">---</h3>
+
+				</div>
+				<div class="container__info__client">
+
+					<small class="info-title">location</small>
+					<h3 class="client-info" id="location">---</h3>
+
+				</div>
+				<div class="container__info__client">
+
+					<small class="info-title">timezone</small>
+					<h3 class="client-info" id="timezone">---</h3>
+
+				</div>
+				<div class="container__info__client">
+
+					<small class="info-title">isp</small>
+					<h3 class="client-info" id="isp">---</h3>
+
+				</div>
+
+			</article>
+			
+		</main>
+		
+		<div class="map">
+
+			<iframe id="map" src="" style="border:0;"></iframe>
+
+		</div>
+
+		<footer class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+			Coded by <a href="https://www.sergiogutierrez.ml">Seezly</a>.
+		</footer>
+
+		<script src="./js/index.js"></script>
+	
+	</body>
+
+</html>
